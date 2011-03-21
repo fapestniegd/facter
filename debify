@@ -1,0 +1,5 @@
+#!/bin/bash
+gzip -dc facter_1.5.9-rc4.diff.gz | patch -p1 
+chmod -R 755 debian
+debian/rules binary
+
